@@ -1,0 +1,143 @@
+<!--
+ My name: Ha Nhu Y Tran
+ Lab 2
+ Filename: contactUs.html
+ Date: 2024-09-20 
+ Description: This is the contact form that allows visitors to get in touch with the institution - Hue College of Economics. In this form, 
+ users will fill in their name and contact information and submit the message to school.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact us form of Hue College of Economics that allows user to get in touch with the college">
+    <meta name="keywords" content="Contact us form, user information, location, address, subject, message">
+    <meta name="author" content="Ha Nhu Y Tran">
+    <title>Contact us form - Hue College of Economics</title>
+</head>
+
+<body>
+    <p>This is Page 2, Click <a href="myschool.html">here</a> to go to Page 1.</p>
+    <h1> Contact Us Form</h1>
+    <!-- User Information Field -->
+    <form action="Lab2Form.php" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>1. User Info</legend>
+
+            <table>
+                <tr>
+                    <td colspan="2"><label for="email">Email</label> </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="email" id="email" name="email" required size="60"
+                            placeholder="format for email is xxx@yyy.zzz"></td>
+                </tr>
+                <tr>
+                    <td><label for="firstName">First Name</label></td>
+                    <td><label for="lastName">Last Name</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="firstName" name="firstName" value="Ha Nhu Y" readonly size="20"></td>
+                    <td><input type="text" id="lastName" name="lastName" maxlength="20" size="20"></td>
+                </tr>
+            </table>
+        </fieldset> <br>
+
+        <!-- Location Field -->
+        <fieldset>
+            <legend>2. Location</legend>
+
+            <table>
+                <tr>
+                    <td colspan="3"><label for="address">Address </label></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="text" id="address" name="address" size="60"></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City</label></td>
+                    <td><label for="state">State</label></td>
+                    <td><label for="zip">Zip</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="city" name="city" size="20"></td>
+                    <td><input type="text" id="state" name="state" size="3"></td>
+                    <td><input type="text" id="zip" name="zip" size="9"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone">Phone</label></td>
+                    <td colspan="2"><label for="country">Country</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="phone" name="phone" size="20" placeholder="NNN-NNN-NNNN"></td>
+                    <td colspan="2"><select id="country" name="country">
+                            <!-- Country options listed here -->
+                            <option value="Canada" selected>Canada</option>                            
+                            <option value="United States">United States</option>                            
+                            <option value="Mexico">Mexico</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Switzerland">Switzerland</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><label>Continent</label> </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="radio" id="northamerica" name="continent" value="North America">
+                        <label for="northamerica">North America</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="radio" id="europe" name="continent" value="Europe">
+                        <label for="europe">Europe</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="radio" id="southamerica" name="continent" value="South America">
+                        <label for="southamerica">South America</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Contact us field -->
+        <fieldset>
+            <legend>3. Contact us</legend>
+
+            <label for="subject">Subject: </label>
+            <input type="text" id="subject" name="subject" size="22"><br>
+
+            <label for="message">Write your message here: </label><br>
+            <textarea id="message" name="message" rows="6" cols="50"></textarea><br>
+        </fieldset>
+
+        <div>
+            <button type="submit">Send</button>
+            <button type="reset">Clear information</button>
+        </div>
+    </form>
+
+    <div>
+        <footer>
+            <p>Ha Nhu Y Tran, 2024 Copyright</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
